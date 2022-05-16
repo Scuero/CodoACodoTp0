@@ -1,6 +1,7 @@
 body{
     background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
     margin-left: 0%;
+    margin-right: 0%;
 }
 
 #barra-menu{
@@ -50,38 +51,172 @@ body{
 #coral{
     margin-top:6rem;
     background-image: url(../imagenes/coral.jpg);
-    background-size: cover;    
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-    height: 80vh;
-
+    height: 80%;
+    overflow: hidden;
 }
 
-#peces{
-    width: 30%;
-    height: 70px;
-    margin: 50px auto;
-    position: fixed;
-    left: 0%;
-    animation-name: jump1;
-    animation-duration: 3s;
+#pez1{
+    position:relative;
+    width:50%;
+    animation-name: animacion1;
+    animation-timing-function:ease-out;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
 }
-@keyframes jump1 {
-    0%{
-        left: 100%;
-    }
-    50% {
-        left: 50%;
-        opacity: 0.5;
-        width: -100%;
-        height: 100px;
-    }
 
+@keyframes animacion1 {
+    0%{
+        left: 120%;
+    }
+    50%{
+        left: 60%;
+    }
     100%{
-        left: 0%;
+        left: -25%;
     }
 }
-#suscripcion{
-    text-align: center;
+
+#pez2{
+    position:relative;
+    width:80%;
+    animation-name: animacion2;
+    animation-timing-function:ease-out;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacion2 {
+    0%{
+        left: 120%;
+    }
+    50%{
+        left: 30%;
+    }
+    100%{
+        left: -55%;
+    }
+}
+
+#pez3{
+    position:relative;
+    width:80%;
+    animation-name: animacion3;
+    animation-timing-function:ease-out;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacion3 {
+    0%{
+        left: 120%;
+    }
+    50%{
+        left: 20%;
+    }
+    100%{
+        left: -55%;
+    }
+}
+
+#suscripcion-section{
+    padding: 3rem 3rem 3rem 3rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     font-family: 'Chelsea Market', cursive;
+    text-align: center;
+    color:rgb(95, 17, 168);
+    font-size: 2rem;
+}
+
+#submit{
+    background: #0066A2;
+    color: white;
+    border-style: outset;
+    border-color: #0066A2;
+    height: 50px;
+    width: 100px;
+    font-family: 'Chelsea Market', cursive;
+    text-shadow: none;
+    border-radius: 20px;
+}
+
+#email {
+    margin-top:2rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#campo-email {
+    padding:0.7rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+#grilla{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+        "foto1 descripcion1 descripcion1"
+        "foto2 descripcion2 descripcion2"
+        "foto3 descripcion3 descripcion3";
+    font-family: 'Chelsea Market', cursive;
+    padding-left: 3%;
+    padding-right: 3%;
+    align-items: center;
+    text-align: center;
+
+}
+
+#foto1 {
+    grid-area: foto1;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;;
+}
+
+#foto1 img {
+    width: 90%;
+}
+
+#foto2 {
+    grid-area: foto2;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;;
+}
+
+#foto2 img {
+    width: 90%;
+}
+
+#foto3 {
+    grid-area: foto3;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;;
+}
+
+#foto3 img {
+    width: 90%;
+}
+
+#descripcion1 {
+    grid-area: descripcion1;
+    color:rgb(95, 17, 168);
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+#descripcion2 {
+    grid-area: descripcion2;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    color:rgb(95, 17, 168);
+}
+
+#descripcion3 {
+    grid-area: descripcion3;
+    color:rgb(95, 17, 168);
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }

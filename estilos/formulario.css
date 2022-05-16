@@ -1,0 +1,101 @@
+#sorteo{
+    background-image: linear-gradient( 300deg,rgba(233, 217, 146, 0.548),  rgba(243, 73, 21, 0.8) ) , url(../imagenes/fondoFormulario.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Chelsea Market', cursive;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+#titulo-formulario {
+    font-size:4rem;
+    display: block;
+    text-align:center;
+}
+
+#descripcion {
+    font-size: 1.5rem;
+    display: block;
+    text-align:center;
+    padding-bottom: 2rem;
+}
+
+#formulario{
+    background-color: rgb(152, 0, 0, 0.3);
+    display: block;
+    line-height:2rem;
+    font-size:1.4rem;
+    padding:2rem;
+}
+
+@media (min-width: 300px){
+    #formulario {
+        max-width: 250px;
+    }
+}
+
+@media (min-width: 500px){
+    #formulario {
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 760px){
+    #formulario {
+        max-width: 650px;
+    }
+}
+
+#nombre {
+    padding: 0.4em;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+#email-formulario{
+    padding: 0.4em;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+#edad{
+    padding: 0.4em;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+#dropdown{
+    padding: 0.4em;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    height:2.5em;
+}
+
+
+#caja-comentarios{
+    width: 100%;
+    height: 5rem;
+}
+#submit-formulario{
+    background: #0066A2;
+    color: white;
+    border-style: outset;
+    border-color: #0066A2;
+    height: 50px;
+    width: 100px;
+    font-family: 'Chelsea Market', cursive;
+    text-shadow: none;
+    border-radius: 20px;
+    width: 100%;
+}

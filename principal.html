@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/principal.css">
+    <link rel="stylesheet" href="estilos/formulario.css"
     <!--fonts de google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,22 +18,140 @@
         <div id="logo">
             <img id="imagen-logo" src="imagenes/logo.jpg" alt="logo-pecera-aleta-feliz">
         </div>
-
         <nav id="enlaces-menu" href="#">
-            <div> <a id="enlace-barra" href="#inicio">Inicio</a> </div>
-            <div> <a id="enlace-barra" href="#productos">Productos</a> </div>
+            <div> <a id="enlace-barra" href="#grilla">Inicio</a> </div>
+            <div> <a id="enlace-barra" href="#catalogo-productos">Productos</a> </div>
             <div> <a id="enlace-barra" href="#sorteo">Sorteo</a> </div>
         </nav>
     </header>
 
-    <div id="coral">
-        <div id="peces"> <img width="20%" src="imagenes/pez1.png"> </div>
-        <div id="peces"> <img width="20%" src="imagenes/pez2.png"> </div>
-        <div id="peces"> <img width="10%" src="imagenes/pez3.png"> </div>
+    <section id="coral">
+        <div id="pez1"> <img width="20%" src="imagenes/pez1.png"> </div>
+        <div id="pez2"> <img width="30%" src="imagenes/pez2.png"> </div>
+        <div id="pez3"> <img width="20%" src="imagenes/pez3.png"> </div>
+    </section>
+
+    <section id="suscripcion-section">
+        SUSCRIBETE PARA RECIBIR LAS MEJORES OFERTAS, Y TODA LA INFORMACION QUE NECESITAS PARA ARMAR TU ACUARIO!!!
+        <form id="email" action="">
+            <input type="email" id="campo-email" placeholder="Ingresa tu email aquí" required>
+            <input type="submit" id="submit" value="Enviar!">
+        </form>
+    </section>
+
+    <section id="grilla">
+        <div id="foto1">
+            <img src="imagenes/foto1.png">
+        </div>
+        <div id="descripcion1">
+            <h2> Descubre nuestra variedad de peces</h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit consequuntur repudiandae aut, dolores eum, obcaecati ipsa eaque voluptate suscipit asperiores similique dolor dolorum, provident placeat accusamus nostrum explicabo et sunt?</p>
+        </div>
+        <div id="foto2">
+            <img src="imagenes/foto2.png">
+        </div>
+        <div id="descripcion2">
+            <h2> Encuentra los productos que necesitas</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni corrupti expedita illum quam sapiente maiores doloribus! Temporibus perspiciatis fuga debitis beatae quod, et consequatur? Maiores dolore officiis incidunt animi tempora!</p>
+        </div>
+        <div id="foto3">
+            <img src="imagenes/foto3.png">
+        </div>
+        <div id="descripcion3">
+            <h2> Agrega al carrito y selecciona tu envio</h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor repellendus dicta perspiciatis consequatur veniam excepturi, ut sapiente reprehenderit aut ad illum corrupti dignissimos quae unde quod culpa facere modi repudiandae.</p>
+        </div>
+    </section>
+
+    <div id="catalogo-productos">
 
     </div>
-    <div id="suscripcion">
-        SUSCRIBETE PARA RECIBIR LAS MEJORES OFERTAS, Y TODA LA INFORMACION QUE NECESITAS PARA ARMAR TU ACUARIO!!!
+
+    <div id="sorteo">
+        <h1 id="titulo-formulario">Sorteo 21 aniversario</h1>
+        <p id="descripcion">Inscribete y participa por comida para peces por un año! </p>
+
+        <form id="formulario">
+            <div>
+                <label id="etiqueta-nombre">Nombre</label>
+                <input type="text" name="nombre-usuario" id="nombre" required placeholder=" Ingresa tu nombre" required>
+            </div>
+            <div>
+                <label id="etiqueta-email">Email</label>
+                <input type="email" name="email-usuario" id="email-formulario" required placeholder=" Ingresa tu email">
+            </div>
+            <div>
+                <label id="etiqueta-edad">Edad</label>
+                <input type="number" name="edad-usuario" id="edad" min="18" max="99" placeholder=" Ingresa tu edad">
+            </div>
+            <div>
+                <label>Ocupación</label>
+                <select id="dropdown" name="ocupacion" required>
+                    <option disabled selected value> A que te dedicas</option>
+                    <option value="estudiante"> Estudiante</option>
+                    <option value="part time"> Trabajo de medio tiempo</option>
+                    <option value="full time"> Trabajo full time</option>
+                    <option value="desempleado"> Sin trabajo</option>
+                </select>
+            </div>
+
+            <div>
+                <p>Género</p>
+                <label>
+                    <input type="radio" value="femenino" name="genero"> Femenino
+                </label>
+                <br>
+                <label>
+                    <input type="radio" value="masculino" name="genero"> Masculino
+                </label>
+                <br>
+                <label>
+                    <input type="radio" value="otro" name="genero"> Otro
+                </label>
+            </div>
+
+            <div>
+                <p>Productos que adquiriste con nosotros, en cualquiera de nuestras sucursales <span>(puedes elegir mas de uno):</span> </p>
+                <label>
+                    <input type="checkbox" value="alimento para peces" name="productos"> Alimento para peces
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" value="anticloro" name="productos"> Anticloro
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" value="filtro" name="productos"> Filtro
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" value="betera" name="productos"> Bettera
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" value="plantas" name="productos"> Plantas
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" value="pecera" name="productos"> Pecera
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" value="otros" name="productos"> otros
+                </label>
+                <br>
+            </div>
+
+            <div>
+                <p>Escribenos alguna sugerencia, estamos tomando nota</p>
+                <textarea id="caja-comentarios" name="comentarios" placeholder="Deja tu comentario aquí..."></textarea>
+            </div>
+
+            <div>
+                <button type="submit" id="submit-formulario">Enviar</button>
+            </div>
+
+        </form>
     </div>
 
 </body>
