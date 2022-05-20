@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/principal.css">
-    <link rel="stylesheet" href="estilos/formulario.css"
+    <link rel="stylesheet" href="estilos/grillaInicio.css">
+    <link rel="stylesheet" href="estilos/formulario.css">
+    <link rel="stylesheet" href="estilos/productos.css">
+    <script src="validacionFormulario.js" type="text/javascript"></script>
     <!--fonts de google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Concert+One&display=swap" rel="stylesheet">
     <title>Aleta Feliz</title>
 </head>
 
@@ -20,7 +23,7 @@
         </div>
         <nav id="enlaces-menu" href="#">
             <div> <a id="enlace-barra" href="#grilla">Inicio</a> </div>
-            <div> <a id="enlace-barra" href="#catalogo-productos">Productos</a> </div>
+            <div> <a id="enlace-barra" href="#seccionProductos">Productos</a> </div>
             <div> <a id="enlace-barra" href="#sorteo">Sorteo</a> </div>
         </nav>
     </header>
@@ -33,7 +36,7 @@
 
     <section id="suscripcion-section">
         SUSCRIBETE PARA RECIBIR LAS MEJORES OFERTAS, Y TODA LA INFORMACION QUE NECESITAS PARA ARMAR TU ACUARIO!!!
-        <form id="email" action="">
+        <form id="email" action="www.google.com.ar">
             <input type="email" id="campo-email" placeholder="Ingresa tu email aquí" required>
             <input type="submit" id="submit" value="Enviar!">
         </form>
@@ -63,22 +66,57 @@
         </div>
     </section>
 
-    <div id="catalogo-productos">
+    <section id="seccionProductos">
+        <h2 id="tituloProductos"> Productos</h2>
+        <div id="catalogo">
+            <div id="producto">
+            <img class="imagenProducto" src="imagenes/catalogo/comida1.png">
+            </div>
+            <div id="producto">
+                <img class="imagenProducto" src="imagenes/catalogo/comida2.png">
+            </div>
+            <div id="producto">
+                <img class="imagenProducto" src="imagenes/catalogo/alguicida.png">
+            </div>
+            <div id="producto">
+                <img class="imagenProducto" src="imagenes/catalogo/anticloro.png">
+            </div>
+            <div id="producto">
+                <img class="imagenProducto" src="imagenes/catalogo/castillo.png">
+            </div>
+            <div id="producto">
+                <img class="imagenProducto" src="imagenes/catalogo/craneo.png">
+            </div>
+            <div id="producto">
+                <img class="imagenProducto" src="imagenes/catalogo/termometro.png">
+            </div>
+            <div id="producto">
+                <img class="imagenProducto" src="imagenes/catalogo/red.png">
+            </div>
+            <div id="producto">
+                <img class="imagenProducto" src="imagenes/catalogo/coral.png">
+            </div>
+        </div>
 
-    </div>
+        <section id="video">
+            <h2> Clientes Felices 100%</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/IR37ESLtpRk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        
+    </section>
 
-    <div id="sorteo">
+    <section id="sorteo">
         <h1 id="titulo-formulario">Sorteo 21 aniversario</h1>
         <p id="descripcion">Inscribete y participa por comida para peces por un año! </p>
 
-        <form id="formulario">
+        <form id="formulario" name="formulario" action="www.google.com.ar">
             <div>
                 <label id="etiqueta-nombre">Nombre</label>
-                <input type="text" name="nombre-usuario" id="nombre" required placeholder=" Ingresa tu nombre" required>
+                <input type="text" name="nombre-usuario" id="nombre" placeholder=" Ingresa tu nombre">
             </div>
             <div>
                 <label id="etiqueta-email">Email</label>
-                <input type="email" name="email-usuario" id="email-formulario" required placeholder=" Ingresa tu email">
+                <input type="email" name="email-usuario" id="emailFormulario" placeholder=" Ingresa tu email">
             </div>
             <div>
                 <label id="etiqueta-edad">Edad</label>
@@ -86,7 +124,7 @@
             </div>
             <div>
                 <label>Ocupación</label>
-                <select id="dropdown" name="ocupacion" required>
+                <select id="dropdown" name="ocupacion">
                     <option disabled selected value> A que te dedicas</option>
                     <option value="estudiante"> Estudiante</option>
                     <option value="part time"> Trabajo de medio tiempo</option>
@@ -96,7 +134,8 @@
             </div>
 
             <div>
-                <p>Género</p>
+                <label>Género</label>
+                <br>
                 <label>
                     <input type="radio" value="femenino" name="genero"> Femenino
                 </label>
@@ -144,15 +183,19 @@
 
             <div>
                 <p>Escribenos alguna sugerencia, estamos tomando nota</p>
-                <textarea id="caja-comentarios" name="comentarios" placeholder="Deja tu comentario aquí..."></textarea>
+                <textarea id="cajaComentarios" name="comentarios" placeholder="Deja tu comentario aquí..."></textarea>
             </div>
 
             <div>
-                <button type="submit" id="submit-formulario">Enviar</button>
+                <button type="submit" id="submitFormulario" onclick="validar();">Enviar</button>
             </div>
 
         </form>
-    </div>
+    </section>
+
+    <footer id="footer">
+        <span> Copyright 2022, Aleta Feliz S.A.</span>
+    </footer>
 
 </body>
 </html>

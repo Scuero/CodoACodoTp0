@@ -13,6 +13,7 @@ body{
     padding: 0rem 5% 0rem 5%;
     width: 100%;
     font-family: 'Chelsea Market', cursive;
+    font-size: 1.5rem;
 }
 
 #logo{
@@ -22,12 +23,12 @@ body{
 
 #imagen-logo{
     height:6rem;
-    width:50%;
-    max-width: 280px;
+    width:55%;
+    max-width: 220px;
 }
 
 #enlaces-menu{
-    padding: 0% 9% 0% 4% ;
+    padding: 0% 15% 0% 0% ;
     display: flex;
     width: 50%;
     align-items: center;
@@ -36,16 +37,19 @@ body{
 
 @media (max-width: 400px){
     #enlaces-menu{
-        flex-wrap: wrap;
+        flex-direction: column;
+        font-size: 1rem;
     }
     #imagen-logo{
-        width:100%;
+        width:70%;
     }
 }
 
 #enlace-barra{
+    margin-right: 0.5rem;
     font-size: 100%;
     color: rgb(157, 209, 243);
+    text-decoration: none;
 }
 
 #coral{
@@ -122,14 +126,15 @@ body{
 }
 
 #suscripcion-section{
-    padding: 3rem 3rem 3rem 3rem;
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+    padding: 5rem 3rem 3rem 3rem;
     align-items: center;
     display: flex;
     flex-direction: column;
-    font-family: 'Chelsea Market', cursive;
+    font-family: 'Concert One', cursive;
     text-align: center;
     color:rgb(95, 17, 168);
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 #submit{
@@ -157,66 +162,18 @@ body{
     width: 100%;
 }
 
-#grilla{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: 
-        "foto1 descripcion1 descripcion1"
-        "foto2 descripcion2 descripcion2"
-        "foto3 descripcion3 descripcion3";
-    font-family: 'Chelsea Market', cursive;
-    padding-left: 3%;
-    padding-right: 3%;
-    align-items: center;
+#video{
     text-align: center;
-
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
-#foto1 {
-    grid-area: foto1;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;;
-}
-
-#foto1 img {
-    width: 90%;
-}
-
-#foto2 {
-    grid-area: foto2;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;;
-}
-
-#foto2 img {
-    width: 90%;
-}
-
-#foto3 {
-    grid-area: foto3;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;;
-}
-
-#foto3 img {
-    width: 90%;
-}
-
-#descripcion1 {
-    grid-area: descripcion1;
-    color:rgb(95, 17, 168);
-    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-}
-
-#descripcion2 {
-    grid-area: descripcion2;
-    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-    color:rgb(95, 17, 168);
-}
-
-#descripcion3 {
-    grid-area: descripcion3;
-    color:rgb(95, 17, 168);
-    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+#footer {
+    display:flex;
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+    background-color: #ddd;
+    justify-content: flex-end;
+    margin-top: 0rem;
+    justify-content:center;
 }

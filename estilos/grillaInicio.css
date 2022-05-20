@@ -1,0 +1,66 @@
+#grilla{
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+        "foto1 descripcion1 descripcion1"
+        "foto2 descripcion2 descripcion2"
+        "foto3 descripcion3 descripcion3";
+    font-family: 'Chelsea Market', cursive;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 2rem;;
+    align-items: center;
+    text-align: center;
+
+}
+
+#foto1 {
+    grid-area: foto1;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;;
+}
+
+#foto1 img {
+    width: 90%;
+}
+
+#foto2 {
+    grid-area: foto2;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;;
+}
+
+#foto2 img {
+    width: 90%;
+}
+
+#foto3 {
+    grid-area: foto3;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;;
+}
+
+#foto3 img {
+    width: 90%;
+}
+
+#descripcion1 {
+    grid-area: descripcion1;
+    color:rgb(95, 17, 168);
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+#descripcion2 {
+    grid-area: descripcion2;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    color:rgb(95, 17, 168);
+}
+
+#descripcion3 {
+    grid-area: descripcion3;
+    color:rgb(95, 17, 168);
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
