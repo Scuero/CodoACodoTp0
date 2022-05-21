@@ -29,4 +29,9 @@
 .imagenProducto{
     width:100%;
     border-radius: 40px;
+    transition: 0.3s ease-in-out;
+}
+
+.imagenProducto:hover{
+    transform: scale(1.04);
 }

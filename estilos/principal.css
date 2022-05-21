@@ -2,6 +2,7 @@ body{
     background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
     margin-left: 0%;
     margin-right: 0%;
+    margin-bottom: 0px;
 }
 
 #barra-menu{
@@ -14,16 +15,18 @@ body{
     width: 100%;
     font-family: 'Chelsea Market', cursive;
     font-size: 1.5rem;
+    z-index: 1;
 }
 
 #logo{
     display: flex;
     width: 50%;
+    height:6rem;
 }
 
 #imagen-logo{
-    height:6rem;
-    width:55%;
+    min-width: 6rem;
+    width:80%;
     max-width: 220px;
 }
 
@@ -35,13 +38,14 @@ body{
     justify-content: space-around;
 }
 
-@media (max-width: 400px){
+@media (max-width: 470px){
     #enlaces-menu{
         flex-direction: column;
         font-size: 1rem;
+    
     }
     #imagen-logo{
-        width:70%;
+        width:100%;
     }
 }
 
